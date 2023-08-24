@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #f5f5f5;
+}
+
+/*estilos menu navegacion*/
+.navegacion-inicio{
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+.menu ul{
+  margin: auto;
+}
+
+.menu1 img{
+  width: 200px;
+  height: 100px;
+}
+.menu ul li a{
+  color: #020202;
+  font-size: 17px;
+  margin-right: 15px;
+}
+.menu ul li a:hover{
+  color: #ffe800 !important;
+}
+
+.menudos li a:hover{
+  background-color: #0f0f0f;
+  width: auto;
+}
+
+.menudos {
+    background-color: white; 
+  }
+  .menudos a {
+    color: black !important; 
+  }
+
+  .buscar{
+    background-color: #ffe800;
+    color: #000000;
+    border-color: #fff;
+  }
+  .buscar:hover{
+    background-color: #ebdd43;
+    color: #000000;
+    
+  }
+  .btn.buscar:active {
+    background-color: #FED92F;
+    border-color: #a8a8a8;
+}
+
+  .hamburguesa {
+    background-color: white; 
+   
+  }
+
+.banner-nuevo{
+  height: 700px;
+  padding: 50px 0px 0px 0px;
+}
+
+/*estilos nueva coleccion*/
+.imagencoleccion {
+  padding: 0px 0px 20px 0px;
+  text-align: center;
+}
+
+.imagencoleccion h1{
+  margin: 20px 0px 20px 0px;
+  font-size: 40px;
+}
+
+.imagenes{
+  display: flex;
+  flex-wrap: wrap; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  justify-content: center; 
+}
+
+.cajaimagen img{
+  max-width: 300px;
+  padding: 5px;
+  margin-right: 15px;
+}
+
+/*estilos categorias*/
+
+.imagen-categoria {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+ 
+}
+
+.cajaimagen-cate {
+  display: flex;
+  flex-wrap: wrap; 
+  display: inline-block;
+  justify-content: center; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  overflow: hidden;
+ 
+}
+
+.cajaimagen-cate img {
+  max-width: 400px;
+  height: 500px;
+  padding: 10px;
+  transition: transform 0.8s; /* Efecto de zoom al pasar el mouse */
+}
+
+.cajaimagen-cate:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+
+.titulo-imagen {
+  bottom: 10px; /* Ajusta la distancia desde la parte inferior de la imagen */
+  left: 10px; /* Ajusta la distancia desde la izquierda de la imagen */
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  padding: 10px;
+  color: #000000;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+
+@media screen and (max-width:768px){
+ 
+  .banner-nuevo{
+    margin: 50px 0px 0px 0px;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .imagencoleccion {
+      margin-top: 5px; /* Ajusta el margen superior según tus preferencias */
+  }
+}
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
