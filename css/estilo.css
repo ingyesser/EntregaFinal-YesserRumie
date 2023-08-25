@@ -220,6 +220,52 @@ footer p{
   padding-bottom: 20px;
 }
 
+.imagencoleccion4{
+  padding-top: 90px;
+  margin-bottom: 100px;
+}
+
+.imagencoleccion4 h2{
+  margin-left: 200px;
+  padding-bottom: 20px;
+}
+
+
+/*estilos categorias gorras*/
+
+.imagen-categoria {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+ 
+}
+
+.cajaimagen-cate {
+  display: flex;
+  flex-wrap: wrap; 
+  display: inline-block;
+  justify-content: center; 
+  max-width: 100%; 
+  margin: 0 auto; 
+  overflow: hidden;
+ 
+}
+
+.cajaimagen-cate img {
+  max-width: 400px;
+  height: 500px;
+  padding: 10px;
+  transition: transform 0.8s; /* Efecto de zoom al pasar el mouse */
+}
+
+.cajaimagen-cate:hover img {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+
+
+
+
 .formulario {
   width: 450px;
   margin: 0 auto;
