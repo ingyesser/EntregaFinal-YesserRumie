@@ -171,6 +171,13 @@ footer{
   color: white; 
 }
 
+.lista-derecha ul li img{
+  width: 40px;
+  height: 40px;
+  background-color: #ebdd43;
+  border-radius: 360px;
+}
+
 
 .logoabajo img{
   display: flex;
@@ -353,6 +360,7 @@ input{
   }
 
   .logoabajo img{
+    margin-top: 20px;
     margin-left: 0;
   }
 
