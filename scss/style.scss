@@ -1,0 +1,548 @@
+// comentario solo para sass
+/*comentario sass y css*/
+
+@import "utilidades/variable";
+@import "utilidades/listas";
+@import "utilidades/mapas";
+@import "utilidades/mixin";
+@import "utilidades/extend";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  body{
+    background-color: $color-body;
+  }
+
+  /* estilos menu de navegacion*/
+.navegacion-inicio{
+    @extend %estilos;
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+
+    .menu1 img{
+        width: 200px;
+        height: 100px;
+    }
+        .menu1{
+            .menu{
+                .redes{
+                    img{
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 50px;
+                    }
+
+                }
+                margin-left: 22%;
+               ul{
+                 li{
+                     a{
+                        color: nth($colores, 2);
+                        font-size: 17px;
+                        margin-right: 15px;
+                        
+                       }
+                        a:hover{
+                        color: #ffe800 !important;
+                        }
+                      
+                    }
+               }
+
+               .menudos{
+                   a:hover{
+                    background-color: #000000;
+                    color: $color-enlaces;
+                  }
+               }
+
+            }
+          }
+     
+}
+
+
+.banner-nuevo{
+    height: 700px;
+    padding: 50px 0px 0px 0px;
+}
+
+/*estilos nueva coleccion*/
+.imagencoleccion{
+   
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    h1{
+        margin: 20px 0px 20px 0px;
+        font-size: 40px;
+    }
+
+    .imagenes{
+        display: flex;
+        flex-wrap: wrap; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        justify-content: center;
+        .cajaimagen{
+            
+
+            img{
+                max-width: 400px;
+                width: 393px;
+                height: 500px;
+                padding: 10px;
+                
+
+            }
+        }
+    }
+}
+
+
+/*Estilo categorias*/
+
+.imagen-categoria{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    .imagenes-cate{
+
+        .cajaimagen-cate{
+            display: flex;
+            flex-wrap: wrap; 
+            display: inline-block;
+            justify-content: center; 
+            max-width: 100%; 
+            margin: 0 auto; 
+            overflow: hidden;
+            height: 600px;
+            img{
+                max-width: 400px;
+                height: 500px;
+                padding: 10px;
+                transition: transform 0.8s; /* Efecto de zoom al pasar el mouse */
+
+            }
+            img:hover{
+                transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
+            }
+
+            .boton-imagen{
+                background-color: #e4d31a;
+                border: 2px solid #ffe800;
+                text-decoration: none;
+                color: #000000;
+                margin-bottom: 20px;
+                padding: 5px 100px;
+                font-size: 20px;
+               
+            }
+            .boton-imagen:hover{
+                background-color: #d1c10e;;
+            }
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #020202;
+    height: 100px;
+    margin-top: 10px;
+    .logoabajo{
+        display: flex;
+        margin-left: 180px;
+        align-content: left;
+        text-align: left;
+        width: 250px;
+        height: 80px;
+    }
+    .lista-derecha{
+        ul{
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin-right: 160px; 
+            margin-top: 20px;
+            color: #fff;
+            li{
+                margin: 0 10px;
+                a{
+                    img{
+                        
+                        @include estilos-base(30px,30px,#fff);
+                        /*width: 30px;
+                        height: 30px;
+                        background-color: #ffffff;*/
+                        border-radius: 360px;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+/*ESTILO GORRAS*/
+/*BANNER GORRAS*/
+
+.imagen-secion{
+   width: 100%;
+   img{
+    width: 100%;
+    height: 700px;
+   }
+}
+
+/*Estilo gorras*/
+
+/*estilos para gorras*/
+.imagen-gorra{
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    h1{
+        margin: 20px 0px 20px 0px;
+        font-size: 40px;
+    }
+
+    .imagenes-gorra{
+
+        .caja-imagen-gorra{
+            display: flex;
+            flex-wrap: wrap; 
+            display: inline-block;
+            justify-content: center; 
+            max-width: 100%; 
+            margin: 0 auto; 
+            overflow: hidden;
+            height: 600px;
+            
+
+            img{
+                max-width: 400px;
+                width: 390px;
+                height: 500px;
+                padding: 10px;
+                cursor: pointer;
+                transition: opacity 0.5s;
+                
+
+            }
+            .boton-gorras{
+               
+                border: 2px solid #ffe800;
+                text-decoration: none;
+                color: #000;
+                margin-bottom: 20px;
+                padding: 5px 100px;
+                font-size: 20px;           
+            }
+
+            .boton-gorras:hover{
+                /*background-color: #d1c10e;*/
+                border: 2px solid #c7b80e;
+            }
+        }
+    }
+}
+
+
+
+/*estilos sueter para adultos*/
+.imagen-coleccion-sueter{
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    h1{
+        margin: 40px 0px 20px 0px;
+        font-size: 40px;
+    }
+    h2{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .imagenes-sueter{
+        display: flex;
+        flex-wrap: wrap; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        justify-content: center;
+        margin-bottom: 50px;
+        .caja-imagen-sueter{
+
+
+            img{
+                max-width: 400px;
+                width: 393px;
+                height: 500px;
+                padding: 10px;
+                cursor: pointer;
+                transition: opacity 0.5s;
+            }
+
+            img:hover{
+                opacity: 0.8;
+            }
+
+            .boton-gorras{
+               
+                border: 2px solid #ffe800;
+                text-decoration: none;
+                color: #000000;
+                margin-bottom: 20px;
+                padding: 5px 100px;
+                font-size: 20px;           
+            }
+
+            .boton-gorras:hover{
+                /*background-color: #d1c10e;*/
+                border: 2px solid #c7b80e;
+            }
+
+        }
+    }
+}
+
+
+
+/*Estilos Pantalonetas*/
+.imagen-coleccion-pantalonetas{
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    h1{
+        margin: 40px 0px 20px 0px;
+        font-size: 40px;
+    }
+    h2{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .imagenes-pantalonetas{
+        display: flex;
+        flex-wrap: wrap; 
+        max-width: 100%; 
+        margin: 0 auto; 
+        justify-content: center;
+        margin-bottom: 50px;
+        .caja-imagen-pantalonetas{
+
+
+            img{
+                max-width: 400px;
+                width: 393px;
+                height: 500px;
+                padding: 10px;
+                cursor: pointer;
+                transition: opacity 0.5s;
+            }
+
+            img:hover{
+                opacity: 0.8;
+            }
+
+            .boton-gorras{
+               
+                border: 2px solid #ffe800;
+                text-decoration: none;
+                color: #000000;
+                margin-bottom: 20px;
+                padding: 5px 100px;
+                font-size: 20px;           
+            }
+
+            .boton-gorras:hover{
+                /*background-color: #d1c10e;*/
+                border: 2px solid #c7b80e;
+            }
+
+        }
+    }
+}
+
+/*Estilos contacto*/
+/*Estilos de contacto*/
+
+.bod-contacto {
+    background-image: url('../img/contactofondo.jpg'); /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.formulario{
+
+        width: 450px;
+        height: 550px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 9%;
+        background-color: #ffffff;
+        color: #000000;
+        box-shadow: 0px 15px 25px rgba(0,0,0,0.50);
+
+        h1{
+            font-weight: 20px;
+        }
+        
+        .campo{
+            margin-bottom: 20px;
+            text-align: left;
+
+               label{
+                display: block;
+                
+              }
+            
+              input{
+                border-radius: 2px;
+              }
+
+              textarea{
+                display: block;
+                width: 420px;
+              }
+        }
+
+        .boton-contacto{
+            /*background-color: #ebdd43;*/
+            background-color: map-get($boton-standard, bg-standard);
+            width: 150px;
+            height: 40px;
+            border-radius: 5px;
+            border-color: #d1c10e;
+            font-size: 18px;
+            margin-left: 130px;
+          
+          }
+
+          .boton-contacto:hover{
+            background-color: #c7b80e;
+            color: #fff;
+          }
+}
+
+.listacontacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+
+    li{
+        color: #fff;
+    }
+  }
+
+
+  .moving-div {
+    width: 100%; /* Ancho del div al 100% de la pantalla */
+    height: 50px; /* Alto del div */
+    background-color: #0c0c0c; /* Color de fondo del div */
+    position: absolute;
+    animation: moveDiv 5s linear infinite; /* Propiedad de animación */
+    
+}
+
+
+@media screen and (max-width:768px) {
+       
+    .navegacion-inicio{
+            .menu1{
+                .menu{
+                    margin-left: 0%;
+                   ul{
+                     li{
+                         a{     
+                            
+                           }  
+                          
+                        }
+                   }
+    
+                }
+              }
+         
+    }
+
+
+    footer{
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+
+        .logoabajo{
+           margin-top: 10px;
+           margin-left: 40px;
+               img{
+                width: 200px;
+              
+              }
+        }
+      
+          .lista-derecha {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            margin-bottom: 20px;
+
+            ul{
+                margin-right: 0; 
+                display: inline-block;
+            }
+           
+        
+          }
+    }
+
+    .banner-nuevo{
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .imagen-secion{
+        img{
+            height: 300px;
+            margin-top: 50px;
+        }
+    }
+
+  /*espaciado entre las cajas para mobile*/
+    .imagen-coleccion-sueter{
+        .imagenes-sueter{
+            .caja-imagen-sueter{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+  /*espaciado entre las cajas para mobile*/
+    .caja-imagen-pantalonetas{
+        margin-bottom: 20px;
+    }
+
+    .formulario{
+        margin-top: 150px;
+    }
+
+
+}
+
+

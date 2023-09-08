@@ -1,407 +1,351 @@
+@charset "UTF-8";
+/*comentario sass y css*/
+.navegacion-inicio {
+  background-color: #ffffff; }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-}
+  font-family: 'Poppins', sans-serif; }
 
-body{
-  background-color: #f5f5f5;
-}
+body {
+  background-color: #f5f5f5; }
 
-/*estilos menu navegacion*/
-.navegacion-inicio{
+/* estilos menu de navegacion*/
+.navegacion-inicio {
   background-color: #ffffff;
   position: fixed;
   width: 100%;
   z-index: 100;
-  top: 0;
-}
-.menu ul{
-  margin: auto;
-}
+  top: 0; }
+  .navegacion-inicio .menu1 img {
+    width: 200px;
+    height: 100px; }
+  .navegacion-inicio .menu1 .menu {
+    margin-left: 22%; }
+    .navegacion-inicio .menu1 .menu .redes img {
+      width: 30px;
+      height: 30px;
+      margin-right: 50px; }
+    .navegacion-inicio .menu1 .menu ul li a {
+      color: #000;
+      font-size: 17px;
+      margin-right: 15px; }
+    .navegacion-inicio .menu1 .menu ul li a:hover {
+      color: #ffe800 !important; }
+    .navegacion-inicio .menu1 .menu .menudos a:hover {
+      background-color: #000000;
+      color: #ffe800; }
 
-.menu1 img{
-  width: 200px;
-  height: 100px;
-}
-.menu ul li a{
-  color: #020202;
-  font-size: 17px;
-  margin-right: 15px;
-}
-.menu ul li a:hover{
-  color: #ffe800 !important;
-}
-
-.menudos li a:hover{
-  background-color: #0f0f0f;
-  width: auto;
-}
-
-.menudos {
-    background-color: white; 
-  }
-  .menudos a {
-    color: black !important; 
-  }
-
-
-  .hamburguesa {
-    background-color: white; 
-   
-  }
-
-.banner-nuevo{
+.banner-nuevo {
   height: 700px;
-  padding: 50px 0px 0px 0px;
-}
+  padding: 50px 0px 0px 0px; }
 
 /*estilos nueva coleccion*/
 .imagencoleccion {
   padding: 0px 0px 10px 0px;
-  text-align: center;
-}
+  text-align: center; }
+  .imagencoleccion h1 {
+    margin: 20px 0px 20px 0px;
+    font-size: 40px; }
+  .imagencoleccion .imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center; }
+    .imagencoleccion .imagenes .cajaimagen img {
+      max-width: 400px;
+      width: 393px;
+      height: 500px;
+      padding: 10px; }
 
-.imagencoleccion h1{
-  margin: 20px 0px 20px 0px;
-  font-size: 40px;
-}
-
-.imagenes{
-  display: flex;
-  flex-wrap: wrap; 
-  max-width: 100%; 
-  margin: 0 auto; 
-  justify-content: center; 
-}
-
-.cajaimagen img{
-  max-width: 400px;
-  width: 350px;
-  padding: 5px;
-  margin-right: 15px;
-}
-
-/*estilos categorias*/
-
-
-
+/*Estilo categorias*/
 .imagen-categoria {
   padding: 10px;
   text-align: center;
   justify-content: center;
-  max-width: 100%;
- 
-}
+  max-width: 100%; }
+  .imagen-categoria .imagenes-cate .cajaimagen-cate {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 600px; }
+    .imagen-categoria .imagenes-cate .cajaimagen-cate img {
+      max-width: 400px;
+      height: 500px;
+      padding: 10px;
+      transition: transform 0.8s;
+      /* Efecto de zoom al pasar el mouse */ }
+    .imagen-categoria .imagenes-cate .cajaimagen-cate img:hover {
+      transform: scale(1.1);
+      /* Aumenta el tamaño de la imagen al pasar el mouse */ }
+    .imagen-categoria .imagenes-cate .cajaimagen-cate .boton-imagen {
+      background-color: #e4d31a;
+      border: 2px solid #ffe800;
+      text-decoration: none;
+      color: #000000;
+      margin-bottom: 20px;
+      padding: 5px 100px;
+      font-size: 20px; }
+    .imagen-categoria .imagenes-cate .cajaimagen-cate .boton-imagen:hover {
+      background-color: #d1c10e; }
 
-
-
-.cajaimagen-cate {
-  display: flex;
-  flex-wrap: wrap; 
-  display: inline-block;
-  justify-content: center; 
-  max-width: 100%; 
-  margin: 0 auto; 
-  overflow: hidden;
- 
-}
-
-.cajaimagen-cate img {
-  max-width: 400px;
-  height: 500px;
-  padding: 10px;
-  transition: transform 0.8s; /* Efecto de zoom al pasar el mouse */
-}
-
-
-
-
-.cajaimagen-cate:hover img {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
-}
-
-
-.titulo-imagen {
-  bottom: 10px; 
-  left: 10px; 
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  padding: 10px;
-  color: #000000;
-  font-weight: bold;
-  font-size: 40px;
-}
-
-
-footer{
+footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #020202;
   height: 100px;
-  
-}
+  margin-top: 10px; }
+  footer .logoabajo {
+    display: flex;
+    margin-left: 180px;
+    align-content: left;
+    text-align: left;
+    width: 250px;
+    height: 80px; }
+  footer .lista-derecha ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin-right: 160px;
+    margin-top: 20px;
+    color: #fff; }
+    footer .lista-derecha ul li {
+      margin: 0 10px; }
+      footer .lista-derecha ul li a img {
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        /*width: 30px;
+                        height: 30px;
+                        background-color: #ffffff;*/
+        border-radius: 360px; }
 
-.lista-derecha ul{
-  display: flex;
-  list-style: none;
-  padding: 0;
-  margin-right: 160px; 
-  margin-top: 20px;
-  color: #fff;
-}
-
-.lista-derecha li{
-  margin: 0 10px;  
-}
-
-.lista-derecha a {
-  text-decoration: none;
-  color: white; 
-}
-
-.lista-derecha ul li img{
-  width: 40px;
-  height: 40px;
-  background-color: #ebdd43;
-  border-radius: 360px;
-}
-
-
-.logoabajo img{
-  display: flex;
-  margin-left: 180px;
-  align-content: left;
-  text-align: left;
-  width: 250px;
-  height: 80px;
-}
-
-
+/*ESTILO GORRAS*/
+/*BANNER GORRAS*/
 .imagen-secion {
-  width: 100%; 
-}
-.imagen-secion img {
-  width: 100%;
-  height: 700px; /* Asegura que la relación de aspecto de la imagen se mantenga */
-}
-.imagencoleccion2{
-  padding-top: 90px;
-}
+  width: 100%; }
+  .imagen-secion img {
+    width: 100%;
+    height: 700px; }
 
-.imagencoleccion2 h1, h2{
-  margin-left: 200px;
-   padding-bottom: 20px;
- }
-
-/* estilos a seccion de imagenes */
-.imagenes2 {
-  display: flex;
-  flex-wrap: wrap; 
-  max-width: 100%; 
-  margin-left: 10%;
-  margin-right: 10%;
-  justify-content: center; 
-  margin-bottom: 2px;
-}
-
-.cajaimagen2 {
-  text-align: center; 
-  justify-content: center;
-}
-
-
-.cajaimagen2 img {
-  width: 350px; 
-  height: 400px; 
-  margin-right: 30px; 
-}
-
-
-.imagencoleccion3{
-  padding-top: 90px;
-  margin-bottom: 100px;
-}
-.imagencoleccion3 h2{
- margin-left: 200px;
-  padding-bottom: 20px;
-}
-
-.imagencoleccion4{
-  padding-top: 90px;
-  margin-bottom: 100px;
-}
-
-.imagencoleccion4 h2{
-  margin-left: 200px;
-  padding-bottom: 20px;
-}
-
-
-/*estilos categorias gorras*/
-
-.imagen-categoria {
+/*Estilo gorras*/
+/*estilos para gorras*/
+.imagen-gorra {
   padding: 10px;
   text-align: center;
   justify-content: center;
-  max-width: 100%;
- 
-}
+  max-width: 100%; }
+  .imagen-gorra h1 {
+    margin: 20px 0px 20px 0px;
+    font-size: 40px; }
+  .imagen-gorra .imagenes-gorra .caja-imagen-gorra {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-block;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 600px; }
+    .imagen-gorra .imagenes-gorra .caja-imagen-gorra img {
+      max-width: 400px;
+      width: 390px;
+      height: 500px;
+      padding: 10px;
+      cursor: pointer;
+      transition: opacity 0.5s; }
+    .imagen-gorra .imagenes-gorra .caja-imagen-gorra .boton-gorras {
+      border: 2px solid #ffe800;
+      text-decoration: none;
+      color: #000;
+      margin-bottom: 20px;
+      padding: 5px 100px;
+      font-size: 20px; }
+    .imagen-gorra .imagenes-gorra .caja-imagen-gorra .boton-gorras:hover {
+      /*background-color: #d1c10e;*/
+      border: 2px solid #c7b80e; }
 
-.imagen-categoria h2{
-  margin-right: 7%;
-  text-align: center;
-}
+/*estilos sueter para adultos*/
+.imagen-coleccion-sueter {
+  padding: 0px 0px 10px 0px;
+  text-align: center; }
+  .imagen-coleccion-sueter h1 {
+    margin: 40px 0px 20px 0px;
+    font-size: 40px; }
+  .imagen-coleccion-sueter h2 {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .imagen-coleccion-sueter .imagenes-sueter {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 50px; }
+    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter img {
+      max-width: 400px;
+      width: 393px;
+      height: 500px;
+      padding: 10px;
+      cursor: pointer;
+      transition: opacity 0.5s; }
+    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter img:hover {
+      opacity: 0.8; }
+    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter .boton-gorras {
+      border: 2px solid #ffe800;
+      text-decoration: none;
+      color: #000000;
+      margin-bottom: 20px;
+      padding: 5px 100px;
+      font-size: 20px; }
+    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter .boton-gorras:hover {
+      /*background-color: #d1c10e;*/
+      border: 2px solid #c7b80e; }
 
-.cajaimagen-cate {
-  display: flex;
-  flex-wrap: wrap; 
-  display: inline-block;
-  justify-content: center; 
-  max-width: 100%; 
-  margin: 0 auto; 
-  overflow: hidden;
- 
-}
+/*Estilos Pantalonetas*/
+.imagen-coleccion-pantalonetas {
+  padding: 0px 0px 10px 0px;
+  text-align: center; }
+  .imagen-coleccion-pantalonetas h1 {
+    margin: 40px 0px 20px 0px;
+    font-size: 40px; }
+  .imagen-coleccion-pantalonetas h2 {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .imagen-coleccion-pantalonetas .imagenes-pantalonetas {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 50px; }
+    .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas img {
+      max-width: 400px;
+      width: 393px;
+      height: 500px;
+      padding: 10px;
+      cursor: pointer;
+      transition: opacity 0.5s; }
+    .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas img:hover {
+      opacity: 0.8; }
+    .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas .boton-gorras {
+      border: 2px solid #ffe800;
+      text-decoration: none;
+      color: #000000;
+      margin-bottom: 20px;
+      padding: 5px 100px;
+      font-size: 20px; }
+    .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas .boton-gorras:hover {
+      /*background-color: #d1c10e;*/
+      border: 2px solid #c7b80e; }
 
-.cajaimagen-cate img {
-  max-width: 400px;
-  height: 500px;
-  padding: 10px;
-  transition: transform 0.8s; /* Efecto de zoom al pasar el mouse */
-}
-
-.cajaimagen-cate:hover img {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen al pasar el mouse */
-}
-
-
-
+/*Estilos contacto*/
+/*Estilos de contacto*/
+.bod-contacto {
+  background-image: url("../img/contactofondo.jpg");
+  /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */ }
 
 .formulario {
   width: 450px;
+  height: 550px;
   margin: 0 auto;
-  padding-top: 20px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid #cccccc;
-  box-shadow: #83878d;
-  margin-top: 21%;
-  background-color: #000000;
-  color: #fff;
-}
+  margin-top: 9%;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5); }
+  .formulario h1 {
+    font-weight: 20px; }
+  .formulario .campo {
+    margin-bottom: 20px;
+    text-align: left; }
+    .formulario .campo label {
+      display: block; }
+    .formulario .campo input {
+      border-radius: 2px; }
+    .formulario .campo textarea {
+      display: block;
+      width: 420px; }
+  .formulario .boton-contacto {
+    /*background-color: #ebdd43;*/
+    background-color: #d1c10e;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border-color: #d1c10e;
+    font-size: 18px;
+    margin-left: 130px; }
+  .formulario .boton-contacto:hover {
+    background-color: #c7b80e;
+    color: #fff; }
 
-.campo{
-  margin-bottom: 20px;
-  text-align: left;
-}
-label{
-  display: block;
-  
-}
-textarea{
-  display: block;
-  width: 420px;
-}
-
-input{
-  border-radius: 2px;
-}
-.boton{
-  background-color: #ebdd43;
-  width: 100px;
-  border-radius: 5px;
-  border-color: #FED92F;
-
-}
-
-.listacontacto{
+.listacontacto {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
-}
+  margin-top: 10px; }
+  .listacontacto li {
+    color: #fff; }
 
+.moving-div {
+  width: 100%;
+  /* Ancho del div al 100% de la pantalla */
+  height: 50px;
+  /* Alto del div */
+  background-color: #0c0c0c;
+  /* Color de fondo del div */
+  position: absolute;
+  animation: moveDiv 5s linear infinite;
+  /* Propiedad de animación */ }
 
-
-@media screen and (max-width:768px){
- 
-  .banner-nuevo{
-    margin: 50px 0px 0px 0px;
-    
-  }
-
-  footer{
+@media screen and (max-width: 768px) {
+  .navegacion-inicio .menu1 .menu {
+    margin-left: 0%; }
+  footer {
     height: auto;
     flex-direction: column;
-    text-align: center;
-
-  }
-  .lista-derecha {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-   
-
-  }
-
-  .logoabajo, .lista-derecha{
-    margin-bottom: 20px;
-  }
-
-  .lista-derecha ul{
-    margin-right: 0; 
-    display: inline-block;
-  }
-
-  .logoabajo img{
-    margin-top: 20px;
-    margin-left: 0;
-  }
-
-  .banner-nuevo{
+    text-align: center; }
+    footer .logoabajo {
+      margin-top: 10px;
+      margin-left: 40px; }
+      footer .logoabajo img {
+        width: 200px; }
+    footer .lista-derecha {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 20px; }
+      footer .lista-derecha ul {
+        margin-right: 0;
+        display: inline-block; }
+  .banner-nuevo {
     height: 300px;
-    
-  }
-
-}
-
-@media (max-width: 768px) {
-  .imagencoleccion {
-      margin-top: 5px; 
-  }
-
-  .imagencoleccion2 h1{
-    margin-left: 100px;
-  }
-
-  .imagencoleccion3 h2{
-    margin-left: 40px;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .imagen-categoria h2{
-    margin-left: 40px;
-  }
-}
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
+    margin-top: 50px; }
+  .imagen-secion img {
+    height: 300px;
+    margin-top: 50px; }
+  /*espaciado entre las cajas para mobile*/
+  .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter {
+    margin-bottom: 20px; }
+  /*espaciado entre las cajas para mobile*/
+  .caja-imagen-pantalonetas {
+    margin-bottom: 20px; }
+  .formulario {
+    margin-top: 150px; } }
