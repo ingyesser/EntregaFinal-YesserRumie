@@ -7,7 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif; }
+  font-family: "Poppins", sans-serif; }
 
 body {
   background-color: #f5f5f5; }
@@ -46,20 +46,54 @@ body {
 .imagencoleccion {
   padding: 0px 0px 10px 0px;
   text-align: center; }
-  .imagencoleccion h1 {
+  .imagencoleccion h2 {
     margin: 20px 0px 20px 0px;
-    font-size: 40px; }
+    font-size: 40px;
+    font-weight: bold; }
   .imagencoleccion .imagenes {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     margin: 0 auto;
     justify-content: center; }
-    .imagencoleccion .imagenes .cajaimagen img {
-      max-width: 330px;
-      width: 330px;
-      height: 430px;
-      padding: 10px; }
+    .imagencoleccion .imagenes .cajaimagen {
+      height: 550px;
+      position: relative; }
+      .imagencoleccion .imagenes .cajaimagen img {
+        display: block;
+        max-width: 330px;
+        width: 330px;
+        height: 430px;
+        padding: 10px;
+        transition: transform 0.8s;
+        /* Efecto de zoom al pasar el mouse */ }
+      .imagencoleccion .imagenes .cajaimagen img:hover {
+        transform: scale(1.1);
+        /* Aumenta el tamaño de la imagen al pasar el mouse */ }
+      .imagencoleccion .imagenes .cajaimagen .letra {
+        color: #000;
+        bottom: 150px;
+        right: 20px;
+        left: 20px;
+        text-align: center;
+        opacity: 1;
+        transition: opacity 0.7s ease; }
+        .imagencoleccion .imagenes .cajaimagen .letra P {
+          margin-top: 10px;
+          font-size: 15px;
+          font-weight: bold; }
+      .imagencoleccion .imagenes .cajaimagen .boton-imagen {
+        background-color: #fff;
+        text-decoration: none;
+        color: #000000;
+        border: 2px solid #000;
+        margin-bottom: 20px;
+        padding: 5px 100px;
+        font-size: 20px; }
+      .imagencoleccion .imagenes .cajaimagen .boton-imagen:hover {
+        background-color: #000;
+        border-color: #fff;
+        color: #fff; }
 
 /*Estilo categorias*/
 .imagen-categoria {
@@ -77,24 +111,52 @@ body {
     overflow: hidden;
     height: 600px; }
     .imagen-categoria .imagenes-cate .cajaimagen-cate img {
-      max-width: 330px;
-      height: 430px;
+      max-width: 100%;
+      width: 400px;
+      height: 500px;
       padding: 10px;
       transition: transform 0.8s;
       /* Efecto de zoom al pasar el mouse */ }
     .imagen-categoria .imagenes-cate .cajaimagen-cate img:hover {
       transform: scale(1.1);
       /* Aumenta el tamaño de la imagen al pasar el mouse */ }
+    .imagen-categoria .imagenes-cate .cajaimagen-cate .letra {
+      border: 2px solid #fff;
+      color: #fff;
+      margin-left: 70px;
+      border-radius: 5px;
+      text-align: center;
+      position: absolute;
+      bottom: -490px;
+      width: 250px; }
+      .imagen-categoria .imagenes-cate .cajaimagen-cate .letra .titulo-imagen {
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 35px;
+        font-family: sans-serif; }
+      .imagen-categoria .imagenes-cate .cajaimagen-cate .letra .titulo-imagen:hover {
+        color: #fff; }
+      .imagen-categoria .imagenes-cate .cajaimagen-cate .letra a {
+        text-decoration: none;
+        color: #fff; }
+    .imagen-categoria .imagenes-cate .cajaimagen-cate .letra:hover {
+      background-color: #000; }
     .imagen-categoria .imagenes-cate .cajaimagen-cate .boton-imagen {
-      background-color: #e4d31a;
-      border: 2px solid #ffe800;
+      background-color: #f6ea00;
       text-decoration: none;
       color: #000000;
       margin-bottom: 20px;
       padding: 5px 100px;
       font-size: 20px; }
     .imagen-categoria .imagenes-cate .cajaimagen-cate .boton-imagen:hover {
-      background-color: #d1c10e; }
+      background-color: #fbf451; }
+
+.marcas {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff; }
 
 footer {
   display: flex;
@@ -147,6 +209,8 @@ footer {
   .imagen-gorra h1 {
     margin: 20px 0px 20px 0px;
     font-size: 40px; }
+  .imagen-gorra .imagenes-gorra .caja-imagen-gorra:hover {
+    border: 1px solid #008eea; }
   .imagen-gorra .imagenes-gorra .caja-imagen-gorra {
     display: flex;
     flex-wrap: wrap;
@@ -155,7 +219,7 @@ footer {
     max-width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    height: 600px; }
+    height: 550px; }
     .imagen-gorra .imagenes-gorra .caja-imagen-gorra img {
       max-width: 300px;
       width: 330px;
@@ -164,15 +228,15 @@ footer {
       cursor: pointer;
       transition: opacity 0.5s; }
     .imagen-gorra .imagenes-gorra .caja-imagen-gorra .boton-gorras {
-      border: 2px solid #ffe800;
+      border: 2px solid #000;
       text-decoration: none;
       color: #000;
       margin-bottom: 20px;
       padding: 5px 100px;
       font-size: 20px; }
     .imagen-gorra .imagenes-gorra .caja-imagen-gorra .boton-gorras:hover {
-      /*background-color: #d1c10e;*/
-      border: 2px solid #c7b80e; }
+      background-color: #000;
+      color: #fff; }
 
 /*estilos sueter para adultos*/
 .imagen-coleccion-sueter {
@@ -191,25 +255,51 @@ footer {
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 50px; }
-    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter img {
-      max-width: 330px;
-      width: 330px;
-      height: 430px;
+    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter:hover {
+      border: 1px solid #008eea; }
+    .imagen-coleccion-sueter .imagenes-sueter .caja-lateral {
+      background-color: #f5f5f5;
       padding: 10px;
-      cursor: pointer;
-      transition: opacity 0.5s; }
-    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter img:hover {
-      opacity: 0.8; }
-    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter .boton-gorras {
-      border: 2px solid #ffe800;
-      text-decoration: none;
-      color: #000000;
-      margin-bottom: 20px;
-      padding: 5px 100px;
-      font-size: 20px; }
-    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter .boton-gorras:hover {
-      /*background-color: #d1c10e;*/
-      border: 2px solid #c7b80e; }
+      width: 200px; }
+      .imagen-coleccion-sueter .imagenes-sueter .caja-lateral h6 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: bold; }
+      .imagen-coleccion-sueter .imagenes-sueter .caja-lateral ul {
+        list-style: none;
+        padding: 0; }
+        .imagen-coleccion-sueter .imagenes-sueter .caja-lateral ul li {
+          text-align: left;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #600; }
+          .imagen-coleccion-sueter .imagenes-sueter .caja-lateral ul li a {
+            font-size: 17px;
+            text-decoration: none;
+            color: #000; }
+    .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter {
+      height: 550px; }
+      .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter img {
+        max-width: 330px;
+        width: 330px;
+        height: 430px;
+        padding: 10px;
+        cursor: pointer;
+        transition: opacity 0.5s; }
+      .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter img:hover {
+        opacity: 0.8; }
+      .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter .boton-gorras {
+        border: 2px solid #000;
+        text-decoration: none;
+        color: #000000;
+        margin-bottom: 20px;
+        padding: 5px 100px;
+        font-size: 20px; }
+      .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter .boton-gorras:hover {
+        background-color: #000;
+        color: #fff; }
 
 /*Estilos Pantalonetas*/
 .imagen-coleccion-pantalonetas {
@@ -228,6 +318,28 @@ footer {
     margin: 0 auto;
     justify-content: center;
     margin-bottom: 50px; }
+    .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-lateral {
+      background-color: #f5f5f5;
+      padding: 10px;
+      width: 200px; }
+      .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-lateral h6 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: bold; }
+      .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-lateral ul {
+        list-style: none;
+        padding: 0; }
+        .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-lateral ul li {
+          text-align: left;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #600; }
+          .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-lateral ul li a {
+            font-size: 17px;
+            text-decoration: none;
+            color: #000; }
     .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas img {
       max-width: 330px;
       width: 330px;
@@ -238,15 +350,15 @@ footer {
     .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas img:hover {
       opacity: 0.8; }
     .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas .boton-gorras {
-      border: 2px solid #ffe800;
+      border: 2px solid #000;
       text-decoration: none;
       color: #000000;
       margin-bottom: 20px;
       padding: 5px 100px;
       font-size: 20px; }
     .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas .boton-gorras:hover {
-      /*background-color: #d1c10e;*/
-      border: 2px solid #c7b80e; }
+      background-color: #000;
+      color: #fff; }
 
 /*Estilos contacto*/
 /*Estilos de contacto*/
@@ -257,6 +369,9 @@ footer {
   /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
   background-repeat: no-repeat;
   /* Evita que la imagen se repita */ }
+
+.footer-contacto {
+  margin-top: -0px; }
 
 .formulario {
   width: 450px;
@@ -275,7 +390,8 @@ footer {
     font-weight: 20px; }
   .formulario .campo {
     margin-bottom: 20px;
-    text-align: left; }
+    text-align: left;
+    background-color: #fff; }
     .formulario .campo label {
       display: block; }
     .formulario .campo input {
@@ -283,41 +399,189 @@ footer {
     .formulario .campo textarea {
       display: block;
       width: 420px; }
-  .formulario .boton-contacto {
-    /*background-color: #ebdd43;*/
-    background-color: #d1c10e;
-    width: 150px;
-    height: 40px;
-    border-radius: 5px;
-    border-color: #d1c10e;
-    font-size: 18px;
-    margin-left: 130px; }
+    .formulario .campo .boton-contacto {
+      background-color: #000;
+      background-color: #d1c10e;
+      width: 150px;
+      height: 40px;
+      border-radius: 5px;
+      border-color: #d1c10e;
+      font-size: 18px;
+      margin-left: 130px; }
   .formulario .boton-contacto:hover {
     background-color: #c7b80e;
     color: #fff; }
 
-.listacontacto {
+.lista-contacto {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 10px; }
-  .listacontacto li {
+  .lista-contacto li {
     color: #fff; }
 
 .moving-div {
   width: 100%;
-  /* Ancho del div al 100% de la pantalla */
   height: 50px;
-  /* Alto del div */
   background-color: #0c0c0c;
-  /* Color de fondo del div */
   position: absolute;
-  animation: moveDiv 5s linear infinite;
-  /* Propiedad de animación */ }
+  animation: moveDiv 5s linear infinite; }
+
+.boton-whatsapp {
+  display: flex;
+  background-color: #f5f5f5;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 100%;
+  bottom: 50px;
+  right: 10px;
+  padding: 0px;
+  transition: ease 0.3s; }
+  .boton-whatsapp a img {
+    width: 50px;
+    transition: ease 1s; }
+  .boton-whatsapp a .palabra {
+    position: absolute;
+    width: 130px;
+    transform: translateX(-50%);
+    /* Centra el tooltip horizontalmente */
+    background-color: #000001;
+    /* Fondo del tooltip */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    opacity: 0;
+    /* Oculta el tooltip por defecto */
+    transition: opacity 0.3s ease;
+    font-size: 11px; }
+  .boton-whatsapp a .palabra:hover {
+    width: 150px;
+    opacity: 1;
+    /* Mostrar la palabra al pasar el mouse*/
+    transform: translateX(-100%); }
+
+.frase-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
+  padding-top: 11px;
+  margin: 50px 20px 50px 20px;
+  /*background-color: #e7d0bc;*/ }
+  .frase-index h1 {
+    text-align: center; }
+  .frase-index p {
+    max-width: 100%;
+    margin-right: 150px;
+    margin-left: 150px; }
+
+.suscripcion {
+  background-color: #e9da08;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: -10px; }
+  .suscripcion form {
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .suscripcion form h5 {
+      margin-bottom: 10px;
+      font-size: 30px;
+      padding-bottom: 10px; }
+    .suscripcion form .campo {
+      display: inline-block;
+      margin-right: 10px;
+      justify-content: center;
+      align-items: center;
+      width: 200px;
+      height: 30px; }
+      .suscripcion form .campo input[type="submit"] {
+        background-color: #000;
+        color: #fff;
+        width: 150px;
+        height: 35px;
+        border: none;
+        cursor: pointer; }
+      .suscripcion form .campo input[type="submit"]:hover {
+        background-color: #131313;
+        color: #ffffff;
+        border: 1px solid #000; }
+      .suscripcion form .campo input[type="text"],
+      .suscripcion form .campo input[type="email"] {
+        width: 100%;
+        height: 35px;
+        padding: 10px;
+        border: 1px solid #ccc; }
+
+.pagos {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  max-width: 100%; }
+  .pagos h6 {
+    font-size: 20px;
+    padding-top: 50px; }
+  .pagos img {
+    padding-top: 20px;
+    width: 350px;
+    height: 130px; }
+
+.calidad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 500px;
+  width: 1300px;
+  margin-left: 110px; }
+  .calidad .nueva-calidad {
+    width: 500px;
+    height: 200px;
+    margin-right: 30px; }
+    .calidad .nueva-calidad h6 {
+      font-size: 40px;
+      margin-bottom: 20px;
+      font-weight: bold; }
+    .calidad .nueva-calidad .vermas {
+      text-decoration: none;
+      background-color: #fff;
+      color: #000;
+      border: 2px solid #000;
+      padding: 10px 30px; }
+    .calidad .nueva-calidad .vermas:hover {
+      background-color: #000;
+      color: #fff; }
+  .calidad .imagen-calidad {
+    width: 300px;
+    height: 200px;
+    margin-right: 30px; }
+    .calidad .imagen-calidad .imagen {
+      max-width: 150px;
+      height: 80px; }
+      .calidad .imagen-calidad .imagen img {
+        width: 400px;
+        height: 430px; }
+    .calidad .imagen-calidad .imagen-segunda {
+      width: 300px;
+      height: 150px;
+      margin-bottom: 60px; }
+      .calidad .imagen-calidad .imagen-segunda img {
+        padding-left: 150px;
+        width: 500px;
+        height: 450px; }
 
 @media screen and (max-width: 768px) {
   .navegacion-inicio .menu1 .menu {
     margin-left: 0%; }
+  .frase-index p {
+    margin-left: 10px;
+    margin-right: 10px; }
   footer {
     height: auto;
     flex-direction: column;
@@ -348,4 +612,46 @@ footer {
   .caja-imagen-pantalonetas {
     margin-bottom: 20px; }
   .formulario {
-    margin-top: 150px; } }
+    margin-top: 150px; }
+  /* margen del boton suscribirse*/
+  input[type="submit"] {
+    margin-top: 20px; }
+  /*categorias */
+  .imagen-categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .imagen-categoria .imagenes-cate .cajaimagen-cate {
+      height: auto; }
+      .imagen-categoria .imagenes-cate .cajaimagen-cate .letra {
+        position: relative; }
+  .calidad {
+    display: block;
+    margin-left: 20px; }
+    .calidad .nueva-calidad {
+      display: inline-block;
+      justify-content: center;
+      margin-bottom: 70px; }
+    .calidad .imagen-calidad {
+      width: 300px;
+      height: 200px;
+      margin-right: 30px; }
+      .calidad .imagen-calidad .imagen {
+        max-width: 150px;
+        height: 80px; }
+        .calidad .imagen-calidad .imagen img {
+          width: 400px;
+          height: 430px; }
+      .calidad .imagen-calidad .imagen-segunda {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 410px;
+        height: 150px; }
+        .calidad .imagen-calidad .imagen-segunda img {
+          margin-top: 370px;
+          padding-left: 0;
+          width: 410px;
+          height: 450px; }
+  .imagencoleccion {
+    margin-top: 800px; } }
