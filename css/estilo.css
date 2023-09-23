@@ -668,12 +668,14 @@ footer {
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 500px;
-  width: 1300px;
-  margin-left: 110px; }
+  /*width: 1300px;*/
+  margin-left: 50px; }
   .calidad .nueva-calidad {
     width: 500px;
     height: 200px;
     margin-right: 30px; }
+    .calidad .nueva-calidad .descripcion {
+      width: 400px; }
     .calidad .nueva-calidad h6 {
       font-size: 40px;
       margin-bottom: 20px;
@@ -754,37 +756,40 @@ footer {
     .imagen-categoria .imagenes-cate .cajaimagen-cate {
       height: auto; }
       .imagen-categoria .imagenes-cate .cajaimagen-cate .letra {
-        position: relative; }
+        /* position: relative;*/ }
   .calidad {
-    display: block;
-    margin-left: 20px; }
+    margin-bottom: 80px; }
     .calidad .nueva-calidad {
       display: inline-block;
       justify-content: center;
       margin-bottom: 70px; }
     .calidad .imagen-calidad {
-      width: 300px;
-      height: 200px;
-      margin-right: 30px; }
+      max-width: 300px;
+      /* Ajusta el ancho al 100% del contenedor */
+      height: auto;
+      /* Mantiene la proporción de aspecto original */
+      margin-right: 0; }
       .calidad .imagen-calidad .imagen {
-        max-width: 150px;
-        height: 80px; }
+        max-width: 300px;
+        height: auto; }
         .calidad .imagen-calidad .imagen img {
-          width: 400px;
+          width: 330px;
           height: 430px; }
       .calidad .imagen-calidad .imagen-segunda {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 410px;
-        height: 150px; }
+        max-width: 600px;
+        height: auto; }
         .calidad .imagen-calidad .imagen-segunda img {
-          margin-top: 370px;
-          padding-left: 0;
-          width: 410px;
-          height: 450px; }
+          max-width: 350px;
+          /* Ajusta el ancho al 100% del contenedor */
+          height: auto;
+          /* Mantiene la proporción de aspecto original */
+          margin-top: 10px;
+          padding-left: 25px; }
   .imagencoleccion {
-    margin-top: 800px; }
+    margin-top: 0px; }
   .imagen-coleccion-sueter-conjunto {
     margin-left: 0; }
   .imagen-coleccion-pantalonetas-bermudas {
