@@ -279,6 +279,9 @@ footer {
             font-size: 17px;
             text-decoration: none;
             color: #000; }
+          .imagen-coleccion-sueter .imagenes-sueter .caja-lateral ul li a:hover {
+            color: #c7b80e;
+            font-weight: bold; }
     .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter {
       height: 550px; }
       .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter img {
@@ -298,6 +301,70 @@ footer {
         padding: 5px 100px;
         font-size: 20px; }
       .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter .boton-gorras:hover {
+        background-color: #000;
+        color: #fff; }
+
+/*segunda secion sueter*/
+.imagen-coleccion-sueter-conjunto {
+  margin-left: 190px;
+  padding: 0px 0px 10px 0px;
+  text-align: center; }
+  .imagen-coleccion-sueter-conjunto h1 {
+    margin: 40px 0px 20px 0px;
+    font-size: 40px; }
+  .imagen-coleccion-sueter-conjunto h2 {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .imagen-coleccion-sueter-conjunto .imagenes-sueter {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 50px; }
+    .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-imagen-sueter:hover {
+      border: 1px solid #008eea; }
+    .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-lateral {
+      background-color: #f5f5f5;
+      padding: 10px;
+      width: 200px; }
+      .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-lateral h6 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: bold; }
+      .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-lateral ul {
+        list-style: none;
+        padding: 0; }
+        .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-lateral ul li {
+          text-align: left;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #600; }
+          .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-lateral ul li a {
+            font-size: 17px;
+            text-decoration: none;
+            color: #000; }
+    .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-imagen-sueter {
+      height: 550px; }
+      .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-imagen-sueter img {
+        max-width: 330px;
+        width: 330px;
+        height: 430px;
+        padding: 10px;
+        cursor: pointer;
+        transition: opacity 0.5s; }
+      .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-imagen-sueter img:hover {
+        opacity: 0.8; }
+      .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-imagen-sueter .boton-gorras {
+        border: 2px solid #000;
+        text-decoration: none;
+        color: #000000;
+        margin-bottom: 20px;
+        padding: 5px 100px;
+        font-size: 20px; }
+      .imagen-coleccion-sueter-conjunto .imagenes-sueter .caja-imagen-sueter .boton-gorras:hover {
         background-color: #000;
         color: #fff; }
 
@@ -340,6 +407,9 @@ footer {
             font-size: 17px;
             text-decoration: none;
             color: #000; }
+          .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-lateral ul li a:hover {
+            color: #c7b80e;
+            font-weight: bold; }
     .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas img {
       max-width: 330px;
       width: 330px;
@@ -357,6 +427,66 @@ footer {
       padding: 5px 100px;
       font-size: 20px; }
     .imagen-coleccion-pantalonetas .imagenes-pantalonetas .caja-imagen-pantalonetas .boton-gorras:hover {
+      background-color: #000;
+      color: #fff; }
+
+/*Estilos Pantalonetas Bermudas*/
+.imagen-coleccion-pantalonetas-bermudas {
+  margin-left: 190px;
+  padding: 0px 0px 10px 0px;
+  text-align: center; }
+  .imagen-coleccion-pantalonetas-bermudas h1 {
+    margin: 40px 0px 20px 0px;
+    font-size: 40px; }
+  .imagen-coleccion-pantalonetas-bermudas h2 {
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 50px; }
+    .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-lateral {
+      background-color: #f5f5f5;
+      padding: 10px;
+      width: 200px; }
+      .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-lateral h6 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: bold; }
+      .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-lateral ul {
+        list-style: none;
+        padding: 0; }
+        .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-lateral ul li {
+          text-align: left;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #600; }
+          .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-lateral ul li a {
+            font-size: 17px;
+            text-decoration: none;
+            color: #000; }
+    .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-imagen-pantalonetas img {
+      max-width: 330px;
+      width: 330px;
+      height: 430px;
+      padding: 10px;
+      cursor: pointer;
+      transition: opacity 0.5s; }
+    .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-imagen-pantalonetas img:hover {
+      opacity: 0.8; }
+    .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-imagen-pantalonetas .boton-gorras {
+      border: 2px solid #000;
+      text-decoration: none;
+      color: #000000;
+      margin-bottom: 20px;
+      padding: 5px 100px;
+      font-size: 20px; }
+    .imagen-coleccion-pantalonetas-bermudas .imagenes-pantalonetas .caja-imagen-pantalonetas .boton-gorras:hover {
       background-color: #000;
       color: #fff; }
 
@@ -654,4 +784,8 @@ footer {
           width: 410px;
           height: 450px; }
   .imagencoleccion {
-    margin-top: 800px; } }
+    margin-top: 800px; }
+  .imagen-coleccion-sueter-conjunto {
+    margin-left: 0; }
+  .imagen-coleccion-pantalonetas-bermudas {
+    margin-left: 0; } }

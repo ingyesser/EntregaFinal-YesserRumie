@@ -330,7 +330,102 @@ footer {
 }
 
 /*estilos sueter para adultos*/
+
 .imagen-coleccion-sueter {
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  h1 {
+    margin: 40px 0px 20px 0px;
+    font-size: 40px;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .imagenes-sueter {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 50px;
+    .caja-imagen-sueter:hover {
+      border: 1px solid #008eea;
+    }
+
+    .caja-lateral {
+      background-color: #f5f5f5;
+      padding: 10px;
+      width: 200px;
+
+      h6 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          text-align: left;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #600;
+
+          a {
+            font-size: 17px;
+            text-decoration: none;
+            color: #000;
+          }
+
+          a:hover {
+            color: #c7b80e;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    .caja-imagen-sueter {
+      height: 550px;
+
+      img {
+        max-width: 330px;
+        width: 330px;
+        height: 430px;
+        padding: 10px;
+        cursor: pointer;
+        transition: opacity 0.5s;
+      }
+
+      img:hover {
+        opacity: 0.8;
+      }
+
+      .boton-gorras {
+        border: 2px solid #000;
+        text-decoration: none;
+        color: #000000;
+        margin-bottom: 20px;
+        padding: 5px 100px;
+        font-size: 20px;
+      }
+
+      .boton-gorras:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*segunda secion sueter*/
+
+.imagen-coleccion-sueter-conjunto {
+  margin-left: 190px;
   padding: 0px 0px 10px 0px;
   text-align: center;
   h1 {
@@ -418,6 +513,94 @@ footer {
 
 /*Estilos Pantalonetas*/
 .imagen-coleccion-pantalonetas {
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+  h1 {
+    margin: 40px 0px 20px 0px;
+    font-size: 40px;
+  }
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .imagenes-pantalonetas {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    .caja-lateral {
+      background-color: #f5f5f5;
+      padding: 10px;
+      width: 200px;
+
+      h6 {
+        text-align: left;
+        font-size: 20px;
+        margin-bottom: 10px;
+        color: #000;
+        font-weight: bold;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          text-align: left;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #600;
+
+          a {
+            font-size: 17px;
+            text-decoration: none;
+            color: #000;
+          }
+          a:hover {
+            color: #c7b80e;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    .caja-imagen-pantalonetas {
+      img {
+        max-width: 330px;
+        width: 330px;
+        height: 430px;
+        padding: 10px;
+        cursor: pointer;
+        transition: opacity 0.5s;
+      }
+
+      img:hover {
+        opacity: 0.8;
+      }
+
+      .boton-gorras {
+        border: 2px solid #000;
+        text-decoration: none;
+        color: #000000;
+        margin-bottom: 20px;
+        padding: 5px 100px;
+        font-size: 20px;
+      }
+
+      .boton-gorras:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/*Estilos Pantalonetas Bermudas*/
+.imagen-coleccion-pantalonetas-bermudas {
+  margin-left: 190px;
   padding: 0px 0px 10px 0px;
   text-align: center;
   h1 {
@@ -923,5 +1106,13 @@ footer {
 
   .imagencoleccion {
     margin-top: 800px;
+  }
+
+  .imagen-coleccion-sueter-conjunto {
+    margin-left: 0;
+  }
+
+  .imagen-coleccion-pantalonetas-bermudas {
+    margin-left: 0;
   }
 }
